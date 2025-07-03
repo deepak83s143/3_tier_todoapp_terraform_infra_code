@@ -1,2 +1,3 @@
-.terraform/
-.terraform.lock.hcl
+.git
+0-main_module/.terraform/
+0-main_module/.terraform.lock.hcl
