@@ -7,14 +7,14 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "mademi-rg"
-    storage_account_name = "mademisa"
-    container_name       = "mademistatefiles"
-    key                  = "sqldb.terraform.tfstate"
+    resource_group_name  = "mademi-rg"     ##### RG Name  
+    storage_account_name = "mademisa"      #### Storage Account Group
+    container_name       = "mademistatefiles"   ###### Container Name
+    key                  = "sqldb.terraform.tfstate"   ###### Key/File name.
   }
 }
 
 provider "azurerm" {
   features {}
-  subscription_id = "171c73ab-6be7-46a1-8601-e56a64c29e2d"
+  subscription_id = "<Subscription ID>"
 }
